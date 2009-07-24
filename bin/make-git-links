@@ -1,4 +1,16 @@
 #! /bin/bash
 
-ln -sfv ~/proj/gitconfig/bin/make-git-links ~/bin
+cd $HOME/proj/gitconfig
+
+`git config --get-regexp email > /dev/null`
+if [ $? != 0 ]; then
+    echo "Can't find an email address in your git config."
+    echo
+    echo "You probably still need to set things up properly."
+    echo
+    echo "Run ./bin/make-local-rebase-branch BRANCHNAME"
+    echo "Edit etc/gitconfig and add the user.email key"
+    echo "Then run ./bin/make-git-links again..."
+fi
+
 ln -sfv ~/proj/gitconfig/etc/gitconfig ~/.gitconfig
