@@ -1,0 +1,17 @@
+#! /bin/sh
+
+cd $HOME/proj/gitconfig
+
+BRANCH=$1
+
+if [ -z $BRANCH ]; then
+    echo "$0 BRANCHNAME"
+    echo
+    echo "please provide a name for the local branch being set up (eg, home, work, etc.)"
+    exit 1
+fi
+
+git config branch.autosetuprebase always
+git co -b $BRANCH --track origin/master
+git config branch.autosetuprebase never
+
