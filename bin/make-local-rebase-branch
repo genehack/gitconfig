@@ -3,16 +3,24 @@
 cd $HOME/proj/gitconfig
 
 BRANCH=$1
+EMAIL=$2
 
-if [ -z $BRANCH ]; then
-    echo "$0 BRANCHNAME"
+
+function exit_with_error {
+    echo "$0 BRANCHNAME EMAIL"
     echo
     echo "please provide a name for the local branch being set up (eg, home, work, etc.)"
-    exit 1
-fi
+    echo "please also provide the email address you want to use on this machine."
+    exit 1;
+}
+
+if [ -z $BRANCH  ]; then exit_with_error; fi
+if [ -z $EMAIL   ]; then exit_with_error; fi
 
 git config push.default matching
 git config branch.autosetuprebase always
 git co -b $BRANCH --track origin/master
 git config branch.autosetuprebase never
-git br -D master
+git br -d master
+./bin/make-git-links
+git config user.email $EMAIL
