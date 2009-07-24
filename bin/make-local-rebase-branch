@@ -24,3 +24,10 @@ git config branch.autosetuprebase never
 git br -d master
 ln -sfv ~/proj/gitconfig/etc/gitconfig ~/.gitconfig
 git config --global user.email $EMAIL
+MSG="set up local autorebase branch
+
+user email set to $EMAIL"
+
+git ci -am"$MSG"
+
+echo $MSG
