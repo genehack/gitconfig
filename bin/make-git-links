@@ -1,0 +1,4 @@
+#! /bin/bash
+
+ln -sfv ~/proj/gitconfig/bin/make-git-links ~/bin
+ln -sfv ~/proj/gitconfig/etc/gitconfig ~/.gitconfig
