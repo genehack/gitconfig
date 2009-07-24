@@ -1,5 +1,6 @@
 [user]
 	name = John SJ Anderson
+	email = genehack@genehack.org
 [alias]
 	br = branch
 	ci = commit
