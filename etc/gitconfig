@@ -1,0 +1,12 @@
+[user]
+	name = John SJ Anderson
+[alias]
+	br = branch
+	ci = commit
+        co = checkout
+	st = status
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+
