@@ -11,7 +11,8 @@ if [ -z $BRANCH ]; then
     exit 1
 fi
 
+git config push.default matching
 git config branch.autosetuprebase always
 git co -b $BRANCH --track origin/master
 git config branch.autosetuprebase never
-
+git br -D master
