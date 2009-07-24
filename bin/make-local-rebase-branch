@@ -22,5 +22,5 @@ git config branch.autosetuprebase always
 git co -b $BRANCH --track origin/master
 git config branch.autosetuprebase never
 git br -d master
-./bin/make-git-links
-git config user.email $EMAIL
+ln -sfv ~/proj/gitconfig/etc/gitconfig ~/.gitconfig
+git config --global user.email $EMAIL
