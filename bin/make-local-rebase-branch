@@ -19,15 +19,15 @@ if [ -z $EMAIL   ]; then exit_with_error; fi
 
 git config push.default matching
 git config branch.autosetuprebase always
-git co -b $BRANCH --track origin/master
+git checkout -b $BRANCH --track origin/master
 git config branch.autosetuprebase never
-git br -d master
+git branch -d master
 ln -sfv ~/proj/gitconfig/etc/gitconfig ~/.gitconfig
 git config --global user.email $EMAIL
 MSG="set up local autorebase branch
 
 user email set to $EMAIL"
 
-git ci -am"$MSG"
+git commit -am"$MSG"
 
 echo $MSG
