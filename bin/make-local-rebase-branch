@@ -1,6 +1,6 @@
 #! /bin/sh
 
-cd $HOME/proj/gitconfig
+cd "$HOME/proj/gitconfig"
 
 BRANCH=$1
 EMAIL=$2
