@@ -3,7 +3,7 @@
 	email = genehack@genehack.org
 [alias]
 	br = branch
-	ci = commit
+	ci = commit -v
 	co = checkout
 	st = status
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
