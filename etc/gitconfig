@@ -18,3 +18,7 @@
 	upload = true
 [github]
 	user = genehack
+[merge]
+	conflictstyle = diff3
+[rerere]
+	enabled = 1
