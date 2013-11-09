@@ -3,6 +3,7 @@
         email = genehack@genehack.org
 [alias]
         br = branch
+        cherrypick = cherry-pick
         ci = commit -v
         co = checkout
         st = status
