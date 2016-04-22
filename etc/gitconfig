@@ -1,6 +1,6 @@
 [user]
         name = John SJ Anderson
-        email = genehack@genehack.org
+        email = john@genehack.org
 [alias]
         br = branch
         cherrypick = cherry-pick
