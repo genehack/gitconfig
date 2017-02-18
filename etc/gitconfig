@@ -11,6 +11,7 @@
         origin = config remote.origin.url
         st = status
         upstream-merge = !"git fetch origin -v && git fetch upstream -v && git merge upstream/master"
+        quick-stats = ! /opt/local/bin/git-quick-stats
 [color]
         branch = auto
         diff = auto
