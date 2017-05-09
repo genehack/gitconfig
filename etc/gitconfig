@@ -32,8 +32,6 @@
         user = genehack
 [merge]
         conflictstyle = diff3
-[rerere]
-        enabled = 1
 	ff = false
 
 [pull]
@@ -41,3 +39,6 @@
 
 [push]
         default = current
+
+[rerere]
+        enabled = 1
