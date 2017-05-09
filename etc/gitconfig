@@ -30,6 +30,7 @@
 
 [github]
         user = genehack
+
 [merge]
         conflictstyle = diff3
 	ff = false
