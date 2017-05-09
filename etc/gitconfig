@@ -34,5 +34,10 @@
         conflictstyle = diff3
 [rerere]
         enabled = 1
+	ff = false
+
+[pull]
+	ff = only
+
 [push]
         default = current
