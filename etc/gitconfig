@@ -27,8 +27,7 @@
 
 [core]
         excludesfile = ~/.gitignore
-[achievement]
-        upload = true
+
 [github]
         user = genehack
 [merge]
