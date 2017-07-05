@@ -7,7 +7,7 @@
         ci = commit -v
         co = checkout
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-        nuke = !"f() { git br -d $1 && git push origin :$1; }; f"
+        nuke = !"f() { git br -d $1 ; git push origin :$1; }; f"
         origin = config remote.origin.url
         st = status
         upstream-merge = !"git fetch origin -v && git fetch upstream -v && git merge upstream/master"
