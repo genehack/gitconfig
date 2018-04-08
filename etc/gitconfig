@@ -10,7 +10,7 @@
         nuke = !"f() { git br -d $1 ; git push origin :$1; }; f"
         origin = config remote.origin.url
         st = status
-        upstream-merge = !"git fetch origin -v && git fetch upstream -v && git merge upstream/master"
+        upstream-merge = !"git fetch origin -v && git fetch upstream -v && git merge upstream/master && git push"
         quick-stats = ! /opt/local/bin/git-quick-stats
 
 [color]
