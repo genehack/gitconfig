@@ -2,4 +2,5 @@
 create:
   links:
     - etc/gitconfig: ~/.gitconfig
+    - etc/gitconfig-ii: ~/.gitconfig-ii
     - etc/gitignore: ~/.gitignore

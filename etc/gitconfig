@@ -1,6 +1,10 @@
 [user]
         name = John SJ Anderson
         email = john@genehack.org
+
+[includeIf "gitdir:~/ii/"]
+        path = ~/.gitconfig-ii
+
 [alias]
         br = branch
         cherrypick = cherry-pick
