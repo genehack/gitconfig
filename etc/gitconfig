@@ -47,5 +47,3 @@
 
 [rerere]
         enabled = 1
-[diff]
-	noprefix = true
